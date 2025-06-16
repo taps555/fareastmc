@@ -38,12 +38,10 @@ Sebelum menjalankan website ini, Anda perlu menginstal **Node.js**:
 2. npm install --force
 
 ```bash
-3. npm install
-```
-
-```bash
 dan sekarang jalankan server localhost nya:
-npm run dev.
+
+
+npm run dev
 
 
 ctrl + http://localhost:3000
