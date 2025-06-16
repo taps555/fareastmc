@@ -33,14 +33,9 @@ Sebelum menjalankan website ini, Anda perlu menginstal **Node.js**:
 
 > Buka folder tersebut di Command Prompt atau Terminal:
 > jalan kan perintah ini :
-
-1. rm -rf node_modules package-lock.json
-2. npm install --force
-
 ```bash
+1. npm install --force
 dan sekarang jalankan server localhost nya:
-
-
 npm run dev
 
 
