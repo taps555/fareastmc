@@ -186,7 +186,7 @@ const NewsSection = () => {
       title: "Anniversary FAR EAST MC INDONESIA",
       excerpt: "Kegiatan merayakan hari jadi FAR EAST MC INDONESIA",
       date: "1 Maret 2024",
-      location: "Bandung",
+      location: "Surabaya",
       image: "/placeholder.svg?height=200&width=300",
       category: "Pesta",
     },
@@ -206,7 +206,7 @@ const NewsSection = () => {
       excerpt:
         "Panduan lengkap merawat motor klasik agar tetap prima saat musim penghujan tiba.",
       date: "20 Februari 2024",
-      location: "Jakarta",
+      location: "Surabaya",
       image: "/placeholder.svg?height=200&width=300",
       category: "Tips",
     },
@@ -216,7 +216,7 @@ const NewsSection = () => {
       excerpt:
         "Fareast MC Indonesia resmi membuka chapter baru di Medan dengan 25 anggota pendiri.",
       date: "15 Februari 2024",
-      location: "Medan",
+      location: "MedSurabayaan",
       image: "/placeholder.svg?height=200&width=300",
       category: "Announcement",
     },
@@ -226,7 +226,7 @@ const NewsSection = () => {
       excerpt:
         "Ulasan mendalam tentang Honda CB 1978, salah satu motor klasik paling ikonik di Indonesia.",
       date: "10 Februari 2024",
-      location: "Jakarta",
+      location: "Surabaya",
       image: "/placeholder.svg?height=200&width=300",
       category: "Review",
     },
@@ -236,7 +236,7 @@ const NewsSection = () => {
       excerpt:
         "Pelatihan dasar safety riding khusus untuk anggota baru dan pengendara pemula.",
       date: "5 Februari 2024",
-      location: "Bandung",
+      location: "Surabaya",
       image: "/placeholder.svg?height=200&width=300",
       category: "Workshop",
     },

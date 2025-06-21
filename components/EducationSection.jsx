@@ -100,7 +100,7 @@ const EducationSection = () => {
     fetchVideos();
   }, []);
 
-  console.log("videoCategories", videoCategories);
+  // console.log("videoCategories", videoCategories);
 
   return (
     <section id="education" className="py-20 bg-gray-900">

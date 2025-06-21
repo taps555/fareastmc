@@ -10,6 +10,7 @@ import GallerySection from "./components/GallerySection";
 import CalendarSection from "./components/CalendarSection";
 import ChapterMap from "./components/ChapterMap";
 import Footer from "./components/Footer";
+import OrganizationStructure from "./components/Organizationstructure";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -43,6 +44,7 @@ function App() {
       />
       <Hero />
       <ProfileSection />
+      <OrganizationStructure />
       <NewsSection />
       <EducationSection />
       <GallerySection />

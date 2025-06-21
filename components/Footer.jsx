@@ -90,11 +90,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone size={16} className="text-blue-400" />
-                <span className="text-gray-300 text-sm">+62 812-3456-7890</span>
+                <span className="text-gray-300 text-sm">+62 878-5125-2575</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail size={16} className="text-blue-400" />
-                <span className="text-gray-300 text-sm">info@fareastmc.id</span>
+                <span className="text-gray-300 text-sm">-</span>
               </div>
             </div>
           </div>
@@ -110,13 +110,15 @@ const Footer = () => {
                 <Facebook size={20} className="text-white" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/fareast.mc/"
+                target="_blank"
                 className="bg-gray-800 hover:bg-blue-600 p-2 rounded-lg transition-colors"
               >
                 <Instagram size={20} className="text-white" />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@FarEastMc-z5p"
+                target="_blank"
                 className="bg-gray-800 hover:bg-blue-600 p-2 rounded-lg transition-colors"
               >
                 <Youtube size={20} className="text-white" />
@@ -124,7 +126,7 @@ const Footer = () => {
             </div>
 
             {/* Newsletter */}
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <h5 className="text-white font-semibold mb-2">Newsletter</h5>
               <div className="flex">
                 <input
@@ -136,14 +138,14 @@ const Footer = () => {
                   <Mail size={16} className="text-white" />
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Fareast MC Indonesia. All rights reserved.
+            © 2003 Fareast MC Indonesia. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a

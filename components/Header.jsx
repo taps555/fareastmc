@@ -1,7 +1,5 @@
-"use client";
-
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react"; // pastikan kamu import icon-nya
 
 const Header = ({ activeSection, setActiveSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,6 +13,14 @@ const Header = ({ activeSection, setActiveSection }) => {
     { id: "calendar", label: "Kalender" },
     { id: "chapter", label: "Chapter" },
   ];
+  const handleScroll = (id) => {
+    setActiveSection(id);
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    setIsMenuOpen(false); // Tutup menu mobile
+  };
 
   return (
     <header className="fixed top-0 w-full bg-black/95 backdrop-blur-sm border-b border-blue-500/30 z-50">
@@ -22,7 +28,7 @@ const Header = ({ activeSection, setActiveSection }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-r rounded-full flex items-center justify-center border-spacing-8">
+            <div className="w-10 h-10 bg-gradient-to-r rounded-full flex items-center justify-center">
               <img src="/logofe.png" alt="" />
             </div>
             <div>
@@ -36,7 +42,7 @@ const Header = ({ activeSection, setActiveSection }) => {
             {menuItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => setActiveSection(item.id)}
+                onClick={() => handleScroll(item.id)}
                 className={`text-sm font-medium transition-colors hover:text-blue-400 ${
                   activeSection === item.id ? "text-blue-400" : "text-white"
                 }`}
@@ -61,10 +67,7 @@ const Header = ({ activeSection, setActiveSection }) => {
             {menuItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => {
-                  setActiveSection(item.id);
-                  setIsMenuOpen(false);
-                }}
+                onClick={() => handleScroll(item.id)}
                 className={`block w-full text-left py-2 px-4 text-sm font-medium transition-colors hover:text-blue-400 ${
                   activeSection === item.id ? "text-blue-400" : "text-white"
                 }`}
