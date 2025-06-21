@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail, Users } from "lucide-react";
-import supabase from "../supabaseClient";
+// import supabase from "../supabaseClient";
+// import sql from "../db"; // pastikan path ke db.js benar
 import { useEffect, useState } from "react";
 
 const ChapterMap = () => {
@@ -36,18 +37,19 @@ const ChapterMap = () => {
   //   },
   // ];
   const [chapterData, setChapterData] = useState([]);
-  const fetchVideos = async () => {
-    const { data, error } = await supabase.from("chapters").select("*");
 
-    setChapterData(data);
-    if (error) {
-      console.error("❌ Supabase fetch error:", error);
-      return;
+  const fetchChapters = async () => {
+    try {
+      const response = await fetch("http://localhost:5000/api/chapters");
+      const data = await response.json();
+      setChapterData(data);
+    } catch (error) {
+      console.error("❌ Fetch error:", error);
     }
   };
 
   useEffect(() => {
-    fetchVideos();
+    fetchChapters();
   }, []);
 
   return (

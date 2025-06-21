@@ -7,7 +7,7 @@ import {
   MessageCircle,
   UserCheck,
 } from "lucide-react";
-import supabase from "../supabaseClient";
+// import supabase from "../supabaseClient";
 import { useEffect, useState } from "react";
 
 const OrganizationStructure = () => {
@@ -82,43 +82,41 @@ const OrganizationStructure = () => {
   });
 
   const fetchOrganization = async () => {
-    const { data, error } = await supabase
-      .from("organization_members")
-      .select("*");
+    try {
+      const response = await fetch("http://localhost:5000/api/organization");
+      const data = await response.json();
 
-    // console.log("📦 Supabase data:", data);
-    // console.log("❌ Supabase error:", error);
+      const categorized = {
+        ketua: null,
+        wakilKetua: null,
+        pengurus: [],
+        penasehat: [],
+      };
 
-    if (error) return;
+      data.forEach((member) => {
+        switch (member.role) {
+          case "ketua":
+            categorized.ketua = member;
+            break;
+          case "wakilKetua":
+            categorized.wakilKetua = member;
+            break;
+          case "pengurus":
+            categorized.pengurus.push(member);
+            break;
+          case "penasehat":
+            categorized.penasehat.push(member);
+            break;
+          default:
+            break;
+        }
+      });
 
-    const categorized = {
-      ketua: null,
-      wakilKetua: null,
-      pengurus: [],
-      penasehat: [],
-    };
-
-    data.forEach((member) => {
-      switch (member.role) {
-        case "ketua":
-          categorized.ketua = member;
-          break;
-        case "wakilKetua":
-          categorized.wakilKetua = member;
-          break;
-        case "pengurus":
-          categorized.pengurus.push(member);
-          break;
-        case "penasehat":
-          categorized.penasehat.push(member);
-          break;
-        default:
-          break;
-      }
-    });
-
-    // console.log("✅ categorized:", categorized);
-    setOrganizationData(categorized);
+      console.log("✅ categorized:", categorized);
+      setOrganizationData(categorized);
+    } catch (error) {
+      console.error("❌ Fetch error:", error);
+    }
   };
 
   useEffect(() => {

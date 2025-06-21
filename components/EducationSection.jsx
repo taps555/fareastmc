@@ -1,6 +1,6 @@
 import { Play, Clock, Eye, X } from "lucide-react";
 import { useState, useEffect } from "react";
-import supabase from "../supabaseClient";
+// import supabase from "../supabaseClient";
 
 const EducationSection = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
@@ -72,27 +72,27 @@ const EducationSection = () => {
   // ];
 
   const fetchVideos = async () => {
-    const { data, error } = await supabase.from("videos").select("*");
+    try {
+      const response = await fetch("http://localhost:5000/api/videos");
+      const data = await response.json();
 
-    if (error) {
-      console.error("❌ Supabase fetch error:", error);
-      return;
+      // Grup berdasarkan category_name
+      const grouped = data.reduce((acc, video) => {
+        const category = video.category_name;
+        if (!acc[category]) acc[category] = [];
+        acc[category].push(video);
+        return acc;
+      }, {});
+
+      const categories = Object.entries(grouped).map(([title, videos]) => ({
+        title,
+        videos,
+      }));
+
+      setVideoCategories(categories);
+    } catch (error) {
+      console.error("❌ Fetch error:", error);
     }
-
-    // Grup berdasarkan category_name
-    const grouped = data.reduce((acc, video) => {
-      const category = video.category_name;
-      if (!acc[category]) acc[category] = [];
-      acc[category].push(video);
-      return acc;
-    }, {});
-
-    const categories = Object.entries(grouped).map(([title, videos]) => ({
-      title,
-      videos,
-    }));
-
-    setVideoCategories(categories);
   };
 
   // Jalankan fetchVideos saat pertama kali render
@@ -100,7 +100,7 @@ const EducationSection = () => {
     fetchVideos();
   }, []);
 
-  // console.log("videoCategories", videoCategories);
+  console.log("videoCategories", videoCategories);
 
   return (
     <section id="education" className="py-20 bg-gray-900">
