@@ -65,7 +65,7 @@ const GallerySection = () => {
       id: 1,
       thumbnail: "/ritualmalamjumat.png?height=200&width=300",
       title: "KOPDAR RUTIN RITUAL JUMAT MALAM DI BAMBU RUNCING",
-      duration: "22:27",
+      duration: "2:27",
       views: "-",
       videoUrl: "https://www.youtube.com/embed/cGdlK29KegM",
     },
