@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 // File: /home/trioadhi/ma_file/project_komunitas motor/v1.1/fareast-mc-website/app/layout.tsx
-=======
-// File: /mnt/d/fareastmc/app/layout.tsx
->>>>>>> 211e5e631d308dbc1069bf95f5f1bfa9c143615a
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
