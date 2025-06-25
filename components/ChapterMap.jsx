@@ -40,7 +40,9 @@ const ChapterMap = () => {
 
   const fetchChapters = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/chapters");
+      const response = await fetch(
+        "https://apii.fareastmcindonesia.com/api/chapters"
+      );
       const data = await response.json();
       setChapterData(data);
     } catch (error) {

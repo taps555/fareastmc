@@ -20,7 +20,7 @@ const ProfileSection = () => {
       icon: <Award className="text-blue-400" size={48} />,
       title: "Tokoh Penting",
       content:
-        "Dipimpin oleh Bro Agus Santoso sebagai Founder & President, didukung oleh Vice President Bro Dedi Kurniawan, dan Secretary General Sis Maya Sari. Tim leadership yang berpengalaman dalam dunia otomotif klasik selama lebih dari 20 tahun.",
+        "Dipimpin oleh Muhammad Hanafi, Tito, Iman Suwaji sebagai founder dan president, didukung oleh vice President iman suwaji dan secretary general medy prakoso. Tim leadership yang berpengalaman dalam dunia motor antiq.",
     },
   ];
 

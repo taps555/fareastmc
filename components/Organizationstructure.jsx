@@ -83,7 +83,9 @@ const OrganizationStructure = () => {
 
   const fetchOrganization = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/organization");
+      const response = await fetch(
+        "https://apii.fareastmcindonesia.com/api/organization"
+      );
       const data = await response.json();
 
       const categorized = {

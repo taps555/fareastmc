@@ -178,7 +178,7 @@ const NewsSection = () => {
         "Agenda yang wajib di laksanakan yaitu Halal Bihalal bersama seluruh anggota",
       date: "-",
       location: "Surabaya",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/halbil.jpg?height=200&width=300",
       category: "Acara",
     },
     {
@@ -187,7 +187,7 @@ const NewsSection = () => {
       excerpt: "Kegiatan merayakan hari jadi FAR EAST MC INDONESIA",
       date: "1 Maret 2024",
       location: "Surabaya",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/ultah.jpg?height=200&width=300",
       category: "Pesta",
     },
     {

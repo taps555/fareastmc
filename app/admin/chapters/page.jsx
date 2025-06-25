@@ -17,7 +17,7 @@ const ChapterAdmin = () => {
   const [editId, setEditId] = useState(null);
 
   const fetchChapters = async () => {
-    const res = await fetch("http://localhost:5000/api/chapters");
+    const res = await fetch("https://apii.fareastmcindonesia.com/api/chapters");
     const data = await res.json();
     setChapters(data);
   };

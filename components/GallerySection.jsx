@@ -18,46 +18,73 @@ const GallerySection = () => {
   const photos = [
     {
       id: 1,
-      src: "/logofe.png?height=300&width=400",
-      title: "KOPDAR RUTIN RITUAL JUMAT MALAM DI BAMBU RUNCING",
-      likes: "-",
-      comments: "-",
+      src: "/touring.jpg?height=300&width=400",
+      title: "Touring bersama anggota FAR EAST MC INDONESIA",
+      likes: "1K",
+      comments: "2",
     },
-    // {
-    //   id: 2,
-    //   src: "/placeholder.svg?height=300&width=400",
-    //   title: "Yamaha RX King - Bro Dedi",
-    //   likes: 38,
-    //   comments: 8,
-    // },
-    // {
-    //   id: 3,
-    //   src: "/placeholder.svg?height=300&width=400",
-    //   title: "Suzuki Thunder - Sis Maya",
-    //   likes: 52,
-    //   comments: 15,
-    // },
-    // {
-    //   id: 4,
-    //   src: "/placeholder.svg?height=300&width=400",
-    //   title: "Kawasaki Ninja R - Bro Andi",
-    //   likes: 41,
-    //   comments: 9,
-    // },
-    // {
-    //   id: 5,
-    //   src: "/placeholder.svg?height=300&width=400",
-    //   title: "Honda Tiger - Bro Rudi",
-    //   likes: 33,
-    //   comments: 6,
-    // },
-    // {
-    //   id: 6,
-    //   src: "/placeholder.svg?height=300&width=400",
-    //   title: "Yamaha Scorpio - Bro Hendra",
-    //   likes: 47,
-    //   comments: 11,
-    // },
+    {
+      id: 2,
+      src: "/touring2.jpg?height=300&width=400",
+      title: "Touring bersama anggota FAR EAST MC INDONESIA",
+      likes: 38,
+      comments: 8,
+    },
+    {
+      id: 3,
+      src: "/touring3.jpg?height=300&width=400",
+      title: "Touring bersama anggota FAR EAST MC INDONESIA",
+      likes: 52,
+      comments: 15,
+    },
+    {
+      id: 4,
+      src: "/wingday.jpg?height=300&width=400",
+      title:
+        "Satu aspal, satu persaudaraan! Wingday FARE AST MC INDONESIA adalah bukti kuatnya ikatan kekeluargaan kita di setiap perjalanan.",
+      likes: 41,
+      comments: 9,
+    },
+    {
+      id: 5,
+      src: "/wingday2.jpg?height=300&width=400",
+      title:
+        "Selamat Wingday FARE AST MC INDONESIA! Terbang lebih tinggi, brother!",
+      likes: 33,
+      comments: 6,
+    },
+    {
+      id: 6,
+      src: "/wingday3.jpg?height=300&width=400",
+      title:
+        "Setiap kilometer adalah cerita, setiap tikungan adalah pengalaman. Selamat merayakan Wingday FARE AST MC INDONESIA",
+      likes: 47,
+      comments: 11,
+    },
+    {
+      id: 7,
+      src: "/triwulan1.jpg?height=300&width=400",
+      title:
+        "Wingday Triwulan FARE AST MC INDONESIA: Sebuah perayaan dedikasi, soliditas, dan perjalanan kita bersama di setiap aspal. Terus maju, Brothers!",
+      likes: 47,
+      comments: 11,
+    },
+    {
+      id: 8,
+      src: "/triwulan2.jpg?height=300&width=400",
+      title:
+        "Rayakan Wingday Triwulan FARE AST MC INDONESIA! Momen untuk mengukuhkan ikatan, berbagi cerita, dan melangkah lebih jauh dalam persaudaraan sejati.",
+      likes: 47,
+      comments: 11,
+    },
+    {
+      id: 9,
+      src: "/triwulan3.jpg?height=300&width=400",
+      title:
+        "Selamat Wingday Triwulan FARE AST MC INDONESIA! Mari kobarkan semangat, jaga kebersamaan, dan wujudkan setiap visi bersama di jalanan.",
+      likes: 47,
+      comments: 11,
+    },
   ];
 
   const videos = [

@@ -17,7 +17,7 @@ export default function VideoAdmin() {
   }, []);
 
   const fetchVideos = async () => {
-    const res = await fetch("http://localhost:5000/api/videos");
+    const res = await fetch("https://apii.fareastmcindonesia.com/api/videos");
     const data = await res.json();
     setVideos(data);
   };

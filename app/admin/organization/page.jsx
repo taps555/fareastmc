@@ -15,7 +15,9 @@ const OrganizationAdmin = () => {
 
   const fetchMembers = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/organization");
+      const res = await fetch(
+        "https://apii.fareastmcindonesia.com/api/organization"
+      );
       const data = await res.json();
       setMembers(data);
     } catch (error) {
