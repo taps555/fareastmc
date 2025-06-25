@@ -627,9 +627,12 @@ video {
 .invisible {
   visibility: hidden;
 }
+<<<<<<< HEAD
 .static {
   position: static;
 }
+=======
+>>>>>>> 211e5e631d308dbc1069bf95f5f1bfa9c143615a
 .fixed {
   position: fixed;
 }
